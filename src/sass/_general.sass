@@ -25,8 +25,8 @@ nav
 	&_item
 		border-right: 2px dotted black
 		padding-right: 28px
-    &:last-child
-            border-right: none
+	&:last-child
+		border-right: none
 
 .subheader
 	position: absolute
@@ -324,27 +324,29 @@ nav
 				&:before
 					background: url('../icons/check_red.svg') center (center / cover) no-repeat
 
-.world_bg
-	background: url('../img/map.jpg')
-
-	min-height: 717px
-	padding: 48px 0 50px 0
+.world 
 	position: relative
-	a
-		display: block
-		margin: 0 auto
-		margin-top: 484px
-		font-weight: 400
-		font-size: 15px
-		text-transform: uppercase
+	min-height: 717px
+	padding: 49px 0
+	background: url('../img/bg/map.jpg') center (center / cover) no-repeat
+	&_link 
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
 		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
 		color: #1fbad6
-		text-decoration: none
-		&:hover
+		&:hover 
+			text-decoration: none
+			color: #fff
 
 footer 
 	padding: 14px 23px 39px 23px
-	background-color:black
+	background-color: black
 	a 
 		&:hover 
 			text-decoration: none
@@ -413,4 +415,5 @@ footer
 	&_mobile
 		a
 			text-decoration: none
-.xs-visible: none
+.xs-visible 
+	display: none
